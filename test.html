@@ -19,6 +19,7 @@ body {
     padding: 0;
     background-color: #24201c;
     font-family: Garamond;
+ 
 }
 
 .fixed-header {
@@ -30,12 +31,13 @@ body {
     top: 20;
     left: 0;
     right: 0;
+   
 }
 
 .content {
 top:20;
 height:80%;
-    border: 20px solid #12100e;
+    border:20px solid #12100e;
     margin:40;
 }
 
@@ -48,6 +50,7 @@ height:80%;
     bottom: 20;
     left: 0;
     right: 0;
+    
 }
 
 .flex-container {
@@ -57,12 +60,16 @@ height: 100%;
 padding: 15px;
 gap: 5px;
 justify-content: space-evenly;     
+margin-left:40;
+margin-right:40;
 }
 
 .flex-container > div{
 background: #24201c;
 border-radius: 5px;
 padding: 8px;
+border: 1px inset #e4ceb0;
+background-image: url("https://sadhost.neocities.org/images/tiles/anisparkle.gif");
 }
 
 /* Additional styling as needed */
@@ -83,12 +90,13 @@ padding: 8px;
     <header class="fixed-header">
         <div class="flex-container">
             <img src="https://64.media.tumblr.com/05f22f80a4a34dd310e07758d9465fd7/7bf975b370d04c95-0a/s500x750/21ac73562d920e5dfccd9219cc9303ab18f979e3.pnj"height="100px">
-            <div class="item1">item 1</div>
-            <div class="item2">item 2</div>
-            <div class="item3">item 3</div>
-            <div class="item4">item 4</div>
+            <div class="item1"><img src="https://web.archive.org/web/20090830081314/http://geocities.com/armagedon4co/picture/globe.gif "height="100px"></div>
+            <div class="item2"><img src="https://web.archive.org/web/20091019193612/http://www.geocities.com/teenentertainmentdc/TV.gif"height="92px"></div>
+            <div class="item3"><img src="https://web.archive.org/web/20090821184107/http://geocities.com/Hollywood/Movie/7444/reel.gif"height="100px"></div>
+            <div class="item4"><img src="https://web.archive.org/web/20090830081314/http://geocities.com/armagedon4co/picture/globe.gif"height="100px"></div>
         
         </div>
+        <div id="header"></div>
       </header>
     <div class="content">
         <!-- Your scrollable content goes here -->
