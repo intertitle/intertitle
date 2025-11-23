@@ -41,6 +41,32 @@ set up a 15 minute call<p>
 bookmark this page<br>
 last updated: 2025 11 19<p>
 
+  <footer style="margin-top:2rem; font-size:0.9rem; text-align:center;">
+  <span>last updated: <span id="last-updated"></span></span>
+</footer>
+
+<script>
+  const username = "intertitle";
+  const repo = "intertitle";
+  const branch = "main";  // adjust if your branch is named differently
+
+  fetch(`https://api.github.com/repos/${username}/${repo}/commits/${branch}`)
+    .then(response => response.json())
+    .then(data => {
+      const date = new Date(data.commit.committer.date);
+      const formatted = date.toLocaleDateString(undefined, {
+        year: "numeric",
+        month: "short",
+        day: "numeric"
+      });
+      document.getElementById("last-updated").textContent = formatted;
+    })
+    .catch(() => {
+      document.getElementById("last-updated").textContent = "unavailable";
+    });
+</script>
+
+
 cc by 4.0. free to share and adapt with attribution.
 
   </body>
