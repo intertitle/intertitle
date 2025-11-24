@@ -1,28 +1,82 @@
-<html lang=”en”>
+<!doctype html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
+  <title>rounders style blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>intertitle</title>
+  <style>
+    :root {
+      --main-bg: #eeeecc;
+      --body-bg: #123;
+      --text: #333333;
+      --border: #bbbbbb;
+      --link: #445566;
+      --link-visited: #223344;
+      --header-bg: #335577;
+      --header-text: #ffffff;
+      --sidebar-top-bg: #558866;
+      --sidebar-top-text: #ffffff;
+      --sidebar-top-header: #ffffff;
+      --sidebar-bottom-header: #aabbcc;
+      --sidebar-bottom-link: #99ddbb;
+      --sidebar-bottom-link-visited: #ffffff;
+      --date-header: #558866;
+    }
 
-<meta charset="utf-8"/>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"
-			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-			  crossorigin="anonymous"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="manifest" href="/site.webmanifest">
-<script src="/load.js"></script> 
-<style>
-body{
-    color:#e4ceb0;
-    background-color:#12100e;
-}
+    * {
+      box-sizing: border-box;
+    }
 
-</style>
-</head> 
+    body {
+      margin: 0;
+      background: var(--body-bg);
+      font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.5;
+      color: var(--text);
+      text-align: center;
+    }
 
-<body>
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
 
-<Center><img src="https://64.media.tumblr.com/05f22f80a4a34dd310e07758d9465fd7/7bf975b370d04c95-0a/s500x750/21ac73562d920e5dfccd9219cc9303ab18f979e3.pnj"></Center>
-<div id="footer"></div>
-</body>
+    a:visited {
+      color: var(--link-visited);
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .outer {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 16px;
+      text-align: left;
+    }
+
+    /* header */
+
+    .site-header-wrap {
+      margin-top: 16px;
+    }
+
+    .site-header {
+      background: var(--header-bg);
+      color: var(--header-text);
+      border-radius: 10px;
+      padding: 16px 24px;
+    }
+
+    .site-title {
+      margin: 0 0 4px;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .site-description {
+      margin: 0;
+      font-size: 0.95r
