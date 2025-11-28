@@ -1,17 +1,50 @@
----
-layout: default
----
-<!doctype html>
+
 <html>
   <head>
     <meta charset="utf-8">
     <title>holly andy</title>
-    <style>    margin: 0;
-    padding: 0;
-    background-color:#e4ceb0;
-    color: #24201c;
-    font-family: Garamond;</style>
+    <style>
+      body {
+        margin: 0;
+        padding: 24px;
+        background-color: #ffffff;
+        color: #000000;
+        font-family: Garamond, serif;
+        line-height: 1.5;
+      }
+      a {
+        color: #0047ff; /* classic blue link */
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .blog-box {
+        background: #ffffff;
+        color: #000000;
+        padding: 20px 0;
+        margin-top: 24px;
+        max-width: 700px;
+      }
+      .blog-header {
+        font-size: 26px;
+        font-weight: bold;
+      }
+      .squiggle {
+        font-size: 18px;
+        color: #000000;
+        margin: 0 0 16px 0;
+        display: block;
+      }
+      .blog-item {
+        margin-bottom: 18px;
+      }
+      footer {
+        margin-top: 24px;
+      }
+    </style>
   </head>
+
   <body>
 
 <strong>intertitle</strong><br>
@@ -25,31 +58,44 @@ notes on livestreaming, film production, and artistic discipline.<p>
 · livestream workshops on cable two december 2025 to january 2026<p>
 
 <strong>about the author</strong><br>
-andy d. is a san diego–based multimedia artist, filmmaker, and live-cinema director.<br>
-they work in public programming for the san diego public library and the digital gym cinema, focusing on how media and community shape cultural access.<br>
-andy is the co-founder of cable two, an experimental public television network, creates art and writing under &lt;/body&gt;, and started intertitle.<br>
+san diego–based multimedia artist, filmmaker, and live-cinema director.<br>
+they work in public programming as a library and film worker, focusing on how media and community shape cultural access.<br>
+author co-founded an experimental public television network, creates art and writing under a pseudonym, and started intertitle.<br>
 their practice centers on treating visual art as civic experiences and integrating creativity into everyday life.<p>
 
-<strong>blog posts</strong><br>
-latest:<br>
-· [coming soon]
 
-→ full archive of posts<p>
+  <strong>blog posts</strong>
 
-subscribe to the newsletter<br>
-set up a 15 minute call<p>
+  <div class="blog-item">
+    <strong><a href="#">how to stop shopping in five easy steps</a></strong><br>video essay series about healing from shopping addiction and shifting toward an anticonsumerist mindset.
+  </div>
+
+  <div class="blog-item">
+    <strong><a href="#">to save the arts, we must kill the artist</a></strong><br>longform essay exploring what the artist is for, and how artistic purpose is defined.
+  </div>
+
+  <div class="blog-item">
+    <strong><a href="#">artisinal intelligence: what's the deal with ai art</a></strong><br>critique of ai art and the cultural reactions surrounding it.
+  </div>
+
+  <p><a href="archive.html" style="font-weight:bold;">→ full archive of posts</a></p>
+
+
+<p>subscribe to the newsletter<br>
+set up a 15 minute call</p>
 
 ------------------------------<p>
 
 bookmark this page<br>
-  <footer>
+
+<footer>
   <span>last updated: <span id="last-updated"></span></span>
-</footer><p></p>
+</footer>
 
 <script>
   const username = "intertitle";
   const repo = "intertitle";
-  const branch = "main";  // adjust if your branch is named differently
+  const branch = "main";
 
   fetch(`https://api.github.com/repos/${username}/${repo}/commits/${branch}`)
     .then(response => response.json())
@@ -66,7 +112,6 @@ bookmark this page<br>
       document.getElementById("last-updated").textContent = "unavailable";
     });
 </script>
-
 
 cc by 4.0. free to share and adapt with attribution.
 
