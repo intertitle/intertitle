@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>archive — holly andy</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 24px;
+        background-color: #ffffff;
+        color: #000000;
+        font-family: Garamond, serif;
+        line-height: 1.5;
+      }
+      a {
+        color: #0047ff;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .archive-header {
+        font-size: 28px;
+        font-weight: bold;
+      }
+      .squiggle {
+        font-size: 18px;
+        color: #000000;
+        margin: 0 0 20px 0;
+        display: block;
+      }
+      .archive-item {
+        margin-bottom: 22px;
+        max-width: 720px;
+      }
+    </style>
+  </head>
+
+  <body>
+
+<strong>intertitle</strong><br>
+full archive of essays, notes, and video essays.<p>
+
+<div class="archive-header">archive</div>
+<span class="squiggle">~~~~~~~~~~~~~~~~~~~~</span>
+
+<!-- items -->
+<div class="archive-item">
+  <strong><a href="#">how to stop shopping in five easy steps</a></strong><br>
+  video essay series about healing from shopping addiction and shifting toward an anticonsumerist mindset.
+</div>
+
+<div class="archive-item">
+  <strong><a href="#">to save the arts, we must kill the artist</a></strong><br>
+  longform essay exploring what the artist is for, and how artistic purpose is defined.
+</div>
+
+<div class="archive-item">
+  <strong><a href="#">artisinal intelligence: what's the deal with ai art</a></strong><br>
+  critique of ai art and the cultural reactions surrounding it.
+</div>
+
+<div class="archive-item">
+  <strong><a href="#">pandora's vox: on community in cyberspace</a></strong><br>
+  reflections on a still-relevant 1994 critique of cyberspace, identity, and commodification.
+</div>
+
+<div class="archive-item">
+  <strong><a href="#">you've been traumatized into hating reading</a></strong><br>
+  an essay on literacy, power, and how reading gets culturally weaponized.
+</div>
+
+<!-- add more items here -->
+
+<p><a href="index.html">← back to home</a></p>
+
+<footer>
+  cc by 4.0. free to share and adapt with attribution.
+</footer>
+
+  </body>
+</html>
