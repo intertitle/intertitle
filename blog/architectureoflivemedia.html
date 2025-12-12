@@ -1,3 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>about — inter+itle</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    :root {
+      --bg-main: #f4e7d7;
+      --bg-post: #f6ebdd;
+      --bg-banner: #4a3a35;
+      --accent-blue: teal;
+      --text-main: #534234;
+      --divider: #534234;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg-main);
+      font-family: "Courier New", monospace;
+      color: var(--text-main);
+      line-height: 1.55;
+    }
+
+    a {
+      color: var(--accent-blue);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .page {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 0 32px 64px;
+    }
+
+    /* header */
+    .site-header { margin-bottom: 20px; }
+
+    .header-image img {
+      width: 100%;
+      display: block;
+    }
+
+    nav.site-nav {
+      font-size: 14px;
+      text-transform: lowercase;
+      margin-top: 6px;
+    }
+    nav.site-nav a {
+      color: var(--text-main);
+      margin-right: 6px;
+    }
+    nav.site-nav .active { font-weight: bold; }
+
+    /* updates bar */
+    .updates-bar {
+      margin-top: 6px;
+      background: var(--bg-banner);
+      color: #f6f2ee;
+      display: flex;
+      font-size: 12px;
+    }
+    .updates-left, .updates-right {
+      padding: 6px 14px;
+      display: flex;
+      align-items: center;
+    }
+    .updates-left {
+      background: #3c302b;
+      min-width: 220px;
+      gap: 6px;
+      border-right: 1px solid #6b5b54;
+    }
+    .updates-left-label {
+      padding: 2px 6px;
+      border-radius: 2px;
+      background: var(--bg-main);
+      color: var(--text-main);
+      font-size: 11px;
+    }
+    .updates-right {
+      flex: 1;
+      justify-content: flex-end;
+    }
+
+    /* ABOUT PAGE BODY */
+
+    .about-page {
+      background: var(--bg-post);
+      padding: 34px 40px 50px;
+      border: 1px solid var(--divider);
+      margin-top: 24px;
+    }
+
+    .about-title {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 16px;
+      text-transform: lowercase;
+    }
+
+    .about-subtitle {
+      font-size: 14px;
+      margin-bottom: 26px;
+      text-transform: lowercase;
+      letter-spacing: 0.05em;
+    }
+
+    .about-page p {
+      margin: 0 0 16px;
+      font-size: 15px;
+      max-width: 620px;
+    }
+
+    /* footer */
+    .site-footer {
+      margin-top: 40px;
+      font-size: 11px;
+      text-align: center;
+      color: var(--text-main);
+      padding-top: 10px;
+      border-top: 1px solid var(--divider);
+    }
+  </style>
+</head>
+
+<body>
+<div class="page">
+
+  <header class="site-header">
+    <div class="header-image">
+      <img src="https://64.media.tumblr.com/82d824b04893aa43f1076d4f14412fe2/1cd9579e7bf9d562-1a/s2048x3072/2df63335678390d4eb2c2afa782e3faf61741093.pnj" alt="">
+    </div>
+
+    <nav class="site-nav">
+      <a href="index.html">home</a> |
+      <a href="#" class="active">about</a> |
+      <a href="archive.html">blog archive</a> |
+      <a href="films.html">films</a> |
+      <a href="links.html">links</a>
+    </nav>
+
+    <div class="updates-bar">
+      <div class="updates-left">
+        <span class="updates-left-label">i+</span>
+        <span>site updates:</span>
+        <span>about page live</span>
+      </div>
+      <div class="updates-right">
+        <a href="#">subscribe →</a>
+      </div>
+    </div>
+  </header>
+
+  
+  <section class="about-page">
+   
+
+
 <p>The Architecture of Digital Live Media<br>
 A bimodal framework for understanding livestream forms.</p>
 
@@ -79,3 +243,16 @@ There is a diegetic world (the house) a character (jerma) with evolving situatio
 <p>try flipping to a random twitch channel and use those questions to determine the primary mode and subtype of the stream. we can understand this expansive medium just by looking and explaining what is unfolding in front of us.</p>
 
 <p>now that we can look at any stream and describe its function through shared terms, we can not only understand these works better but also better ideate on how we can find new ways of making meaningful art.</p>
+
+  </section>
+
+  <footer class="site-footer">
+    <a href="https://creativecommons.org/licenses/by/4.0/">cc by 4.0</a>. free to share + adapt with attribution.
+  </footer>
+
+</div>
+</body>
+</html>
+
+
+
